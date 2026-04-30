@@ -59,8 +59,6 @@ root.mainloop()
 
 # make a check button 
 
-# create and place GUI widgets on a grid 
+
 
 # monthly payment result label 
-
-# event loop 

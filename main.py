@@ -43,8 +43,16 @@ entry_grocery.grid(column=1, row=0)
 
 
 button_calculate = tk.Button(root, text="calculate",  # Button
-                             command= caluculate_monthly_pay) 
+                             command= caluculate_payment) 
 button_calculate.grid(column=0, row=2)
+
+# this is the code for the message wiget
+label_result = tk.Label(root, text="Total Monthly Payment: $0.00")
+label_result.grid(column=1, row=3)
+
+# This is the code for the text box wiget
+text_box = tk.Text(root, height=5, width=40)
+text_box.grid(column=0, row=4, columnspan=2, pady=10)
 
 # bmi result label 
 label_calculate = tk.Label(root, text="Caluculate: ")
@@ -58,7 +66,5 @@ root.mainloop()
 # make radio button 
 
 # make a check button 
-
-
 
 # monthly payment result label 

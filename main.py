@@ -53,10 +53,6 @@ label_calculate.grid(column=1, row=2)
 # event loop 
 root.mainloop()
 
-# get monthly grocery pay
-
-# get phone plan pay
-
 # get calculate button
 
 # make radio button 

@@ -41,6 +41,10 @@ label_grocery.grid(column=0, row=3)
 entry_grocery = tk.Entry(root)  # grocery entry
 entry_grocery.grid(column=1, row=0) 
 
+# this is where I added check button for the groceries so then the user can comferm that they 
+# payed for there groceries 
+check_grocery = tk.Checkbutton(root, text="Include Groceries", variable=include_grocery)
+check_grocery.grid(column=0, row=3, columnspan=2)
 
 button_calculate = tk.Button(root, text="calculate",  # Button
                              command= caluculate_payment) 
@@ -54,17 +58,11 @@ label_result.grid(column=1, row=3)
 text_box = tk.Text(root, height=5, width=40)
 text_box.grid(column=0, row=4, columnspan=2, pady=10)
 
-# bmi result label 
+#  result label 
 label_calculate = tk.Label(root, text="Caluculate: ")
 label_calculate.grid(column=1, row=2)
 
 # event loop 
 root.mainloop()
 
-# get calculate button
 
-# make radio button 
-
-# make a check button 
-
-# monthly payment result label 

@@ -51,15 +51,10 @@ label_grocery.grid(row=2, column=0, padx=10, pady=5, sticky="w")
 
 entry_grocery = tk.Entry(input_frame, width=20)
 entry_grocery.grid(row=2, column=1, padx=10, pady=5)
-
+# Checkbox
 check_grocery = tk.Checkbutton(input_frame, text="Include Groceries", variable=include_grocery)
 check_grocery.grid(row=3, column=0, columnspan=2, pady=5)
 
-
-# Checkbox
-check_grocery = tk.Checkbutton(
-    root, text="Include Groceries", variable=include_grocery)
-check_grocery.grid(row=3, column=0, columnspan=2, pady=5)
 
 # Button (centered)
 button_calculate = tk.Button(root, text="Calculate", command=calculate_payment)
